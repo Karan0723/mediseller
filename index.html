@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Your website description goes here. This should briefly explain what your website is about.">
+    <meta name="keywords" content="keyword1, keyword2, keyword3, etc.">
+    <meta name="author" content="Your Name or Company Name">
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="Description for social media sharing.">
+    <meta property="og:image" content="path/to/your/image.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Website Title">
+    <meta name="twitter:description" content="Description for Twitter sharing.">
+    <meta name="twitter:image" content="path/to/your/image.jpg">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./e-assets/images/fav-icon.png" type="image/x-icon">
+    <title>MEDISELLER - The Global Pharmacy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Latest Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Your custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome CDN -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Animation  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+
+
+
+    <!-- Form Popup -->
+    <div id="popupForm" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>We're Here to Help</h2>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="978a6d86-519a-4b3d-8b14-ec06363a0c65">
+
+                <input type="text" name="Name" placeholder="Your Name" required />
+                <input type="email" name="Email" placeholder="Your Email" required />
+                <input type="tel" name="Contact Number" placeholder="Your Phone" required />
+                <textarea name="Message" placeholder="Your Message" required rows="6"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Popup -->
+    <div id="thankYouPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Thank You!</h2>
+            <p>Your form has been successfully submitted. We will get back to you shortly.</p>
+        </div>
+    </div>
+
+
+
+    <div class="common-background">
+        <!-- Search Input Section -->
+        <div class="search-section">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-4">
+                        <div class="input-group">
+                            <button class="btn btn-search" type="button"><i class="fas fa-search"></i></button>
+                            <input type="text" class="form-control search-input" placeholder="Search for Apple..."
+                                aria-label="Search for Apple">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Section (Navbar) -->
+
+        <div id="nav-section">
+            <div class="container">
+
+                <div class="header-section">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <!-- Toggle Button for Small Screens -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto"> <!-- Use mx-auto to center the nav items -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Fashion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Beauty</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Food & Drink</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Health & Fitness</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Lifestyle</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Technology</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Sports & Media</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">All</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- Hero Section -->
+
+        <div id="hero-section" data-aos="fade-down">
+            <div class="container">
+                <section class="hero-section">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 left-herosection">
+                            <h1 class="hero-heading">Get Exclusive Discounts</h1>
+                            <p class="hero-subheading">Discounts and Offers</p>
+                            <a href="#" class="btn-register">Register Now</a>
+
+
+                            <div class="rectangle-group">
+                                <div class="rectangle filled"></div>
+                                <div class="rectangle outlined"></div>
+                                <div class="rectangle outlined"></div>
+                                <div class="rectangle outlined"></div>
+                                <div class="rectangle outlined"></div>
+                                <div class="rectangle outlined"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Placeholder for promotional image or content -->
+                            <img src="./e-assets/images/hero-img.png" alt="Promotional Image">
+                        </div>
+                    </div>
+            </div>
+            </section>
+        </div>
+
+    </div>
+
+
+
+
+    <section class="top-offers-section" data-aos="fade-up">
+        <div class="container my-5 ">
+
+            <!-- Section Heading Row -->
+            <div class="row align-items-center justify-content-between mx-0 px-0 offers-near-heading">
+                <div class="col-auto d-flex align-items-center">
+                    <h2 class="offers-title">TOP OFFERS</h2>
+
+                </div>
+                <div class="col-auto">
+                    <a href="#" class="view-all-link">
+                        View All <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Static Card -->
+                <div class="col-lg-3">
+                    <div class="static-card ">
+                        <h2 class="">Most Popular Offers</h2>
+                        <p>Get the best deals on our top-rated services with exclusive offers crafted just for you!</p>
+                        <button class="btn btn-dark">View All</button>
+                    </div>
+                </div>
+
+                <!-- Slider Wrapper -->
+                <div class="col-lg-9 position-relative">
+                    <!-- Previous button -->
+                    <button id="prevBtn" class="slider-control prev">
+                        <span>&#10094;</span>
+                    </button>
+                    <!-- Next button -->
+                    <button id="nextBtn" class="slider-control next">
+                        <span>&#10095;</span>
+                    </button>
+
+                    <!-- Cards Wrapper for Sliding -->
+                    <div class="offer-cards-wrapper overflow-hidden">
+                        <div class="offer-cards d-flex">
+                            <!-- Cards to slide (duplicated first and last card for infinite loop) -->
+                            <div class="offer-card">
+                                <div class="top-section">
+                                    <img src="./e-assets/images/chines-image1.png" alt="">
+                                    <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+                                </div>
+                                <div class="bottom-section">
+                                    <h4>Chinese food calling at 35% off!</h4>
+                                    <img src="./e-assets/images/chines-image-small.png" alt="Logo"
+                                        class="img-fluid mt-3">
+                                </div>
+                            </div>
+
+                            <div class="offer-card">
+                                <div class="top-section">
+                                    <img src="./e-assets/images/Tasty_food_img1.png" alt="">
+                                    <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+                                    <span class="hot-fire">
+                                        <p>HOT &#128293; </p>
+                                    </span>
+                                </div>
+                                <div class="bottom-section">
+                                    <h4>Tasty food at up to 15% off! T&C</h4>
+                                    <img src="./e-assets/images/Tasty_food_img1_small.png" alt="Logo"
+                                        class="img-fluid mt-3">
+                                </div>
+                            </div>
+
+                            <div class="offer-card">
+                                <div class="top-section">
+                                    <img src="./e-assets/images/Tasty_food_img2.png" alt="">
+                                    <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+                                </div>
+                                <div class="bottom-section">
+                                    <h4>Tasty Meal at up to 50% off! T&C</h4>
+                                    <img src="./e-assets/images/Tasty_food_img2_small.png" alt="Logo"
+                                        class="img-fluid mt-3">
+                                </div>
+                            </div>
+
+                            <div class="offer-card">
+                                <div class="top-section">
+                                    <img src="./e-assets/images/Tasty_food_img4.png" alt="">
+                                    <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+                                    <span class="hot-fire">
+                                        <p>HOT &#128293; </p>
+                                    </span>
+                                </div>
+                                <div class="bottom-section">
+                                    <h4>Healthy food calling at 25% off!</h4>
+                                    <img src="./e-assets/images/Tasty_food_img4_small.png" alt="Logo"
+                                        class="img-fluid mt-3">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Offers Near Section -->
+    <section class="offers-near-container container-fluid px-0 " data-aos="fade-up">
+        <div class="container">
+            <!-- Section Heading Row -->
+            <div class="row align-items-center justify-content-between mx-0 px-0 offers-near-heading">
+                <div class="col-auto d-flex align-items-center">
+                    <h2 class="offers-title">OFFERS NEAR</h2>
+                    <div class="offers-location">
+                        <span class="location-text">Delhi</span>
+                        <i class="fa-solid fa-location-crosshairs" aria-hidden="true" style="color: #01CFA9;"></i>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href="#" class="view-all-link">
+                        View All <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Content Row -->
+            <div class="row align-items-center mx-0 px-0 offers-main-content">
+                <!-- Left Image Column -->
+                <div class="col-lg-6 px-0 near-img_hot">
+                    <img src="./e-assets/images/offer_near_image1.png" alt="Offer Image" class="img-fluid offer-image">
+                    <span class="hot-fire">
+                        <p>HOT &#128293; </p>
+                    </span>
+                </div>
+                <!-- Right Text Column -->
+                <div class="col-lg-6 offers-text-box d-flex flex-column justify-content-center px-4 py-3">
+                    <h3 class="offers-heading">Get up to 40% off on HealthKart + Extra 10% off with UNILIFE!</h3>
+                    <p class="offers-description">Get up to 40% off on HealthKart + Extra 10% off with UNILIFE!</p>
+                    <img src="./e-assets/images/offer_near_logo_image.png" alt="Offer Logo" class="offer-logo-image">
+                </div>
+            </div>
+
+            <!-- Offer Cards Row -->
+            <div class=" offers-card-row m-0 p-0 mt-4">
+                <div class="near_offer_cards" data-aos="fade-right">
+                    <div class="top-section">
+                        <img src="./e-assets/images/near_offer_img1.png" alt="">
+                        <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+
+                    </div>
+                    <div class="bottom-section">
+                        <h4>FLAT 15% OFF</h4>
+                        <img src="./e-assets/images/near_offer_img_logo1.png" alt="Logo" class="img-fluid mt-3">
+                    </div>
+                </div>
+
+
+
+
+                <div class="near_offer_cards" data-aos="fade-right">
+                    <div class="top-section lifemb">
+                        <img src="./e-assets/images/near_offer_img2.png" alt="">
+                        <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+                        <span class="new_life_modal">
+                            <p>NEW </p>
+                        </span>
+                    </div>
+                    <div class="bottom-section ">
+                        <h4>Use LIFEMB10 for upto 50% off!</h4>
+                        <img src="./e-assets/images/near_offer_img_logo2.png" alt="Logo" class="img-fluid mt-3">
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="near_offer_cards" data-aos="fade-left">
+                    <div class="top-section">
+                        <img src="./e-assets/images/near_offer_img3.png" alt="">
+                        <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+
+                    </div>
+                    <div class="bottom-section">
+                        <h4>Great discounts on a scoop of sheer bliss!</h4>
+                        <img src="./e-assets/images/near_offer_img_logo3.png" alt="Logo" class="img-fluid mt-3">
+                    </div>
+                </div>
+
+
+
+
+                <div class="near_offer_cards" data-aos="fade-left">
+                    <div class="top-section">
+                        <img src="./e-assets/images/near_offer_img4.png" alt="">
+                        <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+                        <span class="hot-fire">
+                            <p>HOT &#128293; </p>
+                        </span>
+                    </div>
+                    <div class="bottom-section">
+                        <h4>Good health come with great offers on TrueBasics!</h4>
+                        <img src="./e-assets/images/near_offer_img_logo4.png" alt="Logo" class="img-fluid mt-3">
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="popular-categories">
+        <div class="container">
+            <!-- Section Heading Row -->
+            <div class="row align-items-center justify-content-between mx-0 px-0 offers-near-heading">
+                <div class="col-auto d-flex align-items-center">
+                    <h2 class="offers-title">Popular categories</h2>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 category-card" data-aos="fade-right">
+                    <img src="./e-assets/images/Popular_categories_image1.png" alt="Fashion" class="category-image1">
+                    <div class="row card-content">
+                        <div class="col-lg-6">
+
+                            <div class="image_air">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="text-content">
+                                <p class="offer-text">Get upto <span class="discount">30%</span> on Fashion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 category-card" data-aos="fade-up">
+                    <img src="./e-assets/images/Popular_categories_image2.png" alt="Technology" class="category-image2">
+                    <div class="row card-content">
+                        <div class="col-lg-6">
+
+                            <div class="image_air">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="text-content">
+                                <p class="offer-text">Get upto <span class="discount">20%</span> of Food</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 category-card" data-aos="fade-left">
+                    <img src="./e-assets/images/Popular_categories_image3.png" alt="Technology" class="category-image3">
+                    <div class="row card-content">
+                        <div class="col-lg-6">
+                            <div class="image_air">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="text-content">
+                                <p class="offer-text">Get upto <span class="discount">10%</span> on Electronics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="brands-section">
+        <div class="container">
+            <!-- Section Heading Row -->
+            <div class="row align-items-center justify-content-between mx-0 px-0 offers-near-heading">
+                <div class="col-auto d-flex align-items-center">
+                    <h2 class="offers-title">Top Vendors</h2>
+
+                </div>
+            </div>
+            <div class="brands-slider">
+                <div class="brands-wrapper">
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image1.png" alt="Brand 1" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image2.png" alt="Brand 2" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image3.png" alt="Brand 3" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image4.png" alt="Brand 4" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image5.png" alt="Brand 5" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image6.png" alt="Brand 6" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image7.png" alt="Brand 6" />
+                    </div>
+                    <!-- Duplicate images for seamless looping -->
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image1.png" alt="Brand 1" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image2.png" alt="Brand 2" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image3.png" alt="Brand 3" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image4.png" alt="Brand 4" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image5.png" alt="Brand 5" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image6.png" alt="Brand 6" />
+                    </div>
+                    <div class="brand-image">
+                        <img src="./e-assets/images/brand_image7.png" alt="Brand 6" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="register-section" data-aos="fade-up">
+        <div class="container register-image-parent">
+            <img src="./e-assets/images/register-image.png" alt="Internship Image" class="register-image">
+
+            <div class="row align-items-center">
+
+
+                <div class="col-lg-6">
+                    <!-- Left side with image and decorative shapes -->
+                    <div class="register-image-container">
+                        <img src="./e-assets/images/register-image.png" alt="Internship Image"
+                            class="small_screen_image">
+
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+
+                    <!-- Right side with heading, description, and button -->
+                    <div class="register-text-container">
+                        <h2 class="register-heading">Get internship opportunities from the biggest brands</h2>
+                        <p class="register-description">Start exploring blockchain applications in seconds.</p>
+                        <button class="register-button" id="openPopup" class="open-popup-button">Register Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="popular-section" data-aos="fade-up">
+        <div class="container">
+            <!-- Section Heading Row -->
+            <div class="row align-items-center justify-content-between mx-0 px-0 offers-near-heading">
+                <div class="col-auto d-flex align-items-center">
+                    <h2 class="offers-title">Best offers on</h2>
+                    <div class="offers-location">
+                        <span class="location-text">Electronic Devices</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row align-items-center">
+                <!-- Static Card -->
+                <div class="col-lg-3" data-aos="fade-up">
+                    <div class="static-card ">
+                        <h2 class="">Exclusive offers on Beauty</h2>
+                        <p>Discover exclusive beauty deals crafted just for you! Elevate your routine with our premium
+                            offers.</p>
+                        <button class="btn btn-dark">View All</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3" data-aos="fade-up">
+                    <div class="offer-card">
+                        <div class="top-section">
+                            <img src="./e-assets/images/electronic_image1.png" alt="">
+                            <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+
+                        </div>
+                        <div class="bottom-section">
+                            <h4>Tasty food at up to 15% off! T&C</h4>
+                            <img src="./e-assets/images/electronic_log_image1.png" alt="Logo" class="img-fluid mt-3">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3" data-aos="fade-up">
+                    <div class="offer-card">
+                        <div class="top-section">
+                            <img src="./e-assets/images/electronic_image2.png" alt="">
+                            <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+                            <span class="hot-fire">
+                                <p>HOT &#128293; </p>
+                            </span>
+                        </div>
+                        <div class="bottom-section">
+                            <h4>Tasty food at up to 25% off! T&C</h4>
+                            <img src="./e-assets/images/electronic_log_image2.png" alt="Logo" class="img-fluid mt-3">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3" data-aos="fade-up">
+                    <div class="offer-card">
+                        <div class="top-section">
+                            <img src="./e-assets/images/electronic_image3.png" alt="">
+                            <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+
+                        </div>
+                        <div class="bottom-section">
+                            <h4>Tasty food at up to 20% off! T&C</h4>
+                            <img src="./e-assets/images/electronic_log_image3.png" alt="Logo" class="img-fluid mt-3">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3" data-aos="fade-up">
+                    <div class="offer-card">
+                        <div class="top-section">
+                            <img src="./e-assets/images/electronic_image4.png" alt="">
+                            <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+
+                        </div>
+                        <div class="bottom-section">
+                            <h4>Tasty food at up to 45% off! T&C</h4>
+                            <img src="./e-assets/images/electronic_log_image1.png" alt="Logo" class="img-fluid mt-3">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3" data-aos="fade-up">
+                    <div class="offer-card">
+                        <div class="top-section">
+                            <img src="./e-assets/images/electronic_image5.png" alt="">
+                            <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+
+                        </div>
+                        <div class="bottom-section">
+                            <h4>Tasty food at up to 50% off! T&C</h4>
+                            <img src="./e-assets/images/electronic_log_image2.png" alt="Logo" class="img-fluid mt-3">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3" data-aos="fade-up">
+                    <div class="offer-card">
+                        <div class="top-section">
+                            <img src="./e-assets/images/electronic_image6.png" alt="">
+                            <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+                            <span class="hot-fire">
+                                <p>HOT &#128293; </p>
+                            </span>
+                        </div>
+                        <div class="bottom-section">
+                            <h4>Tasty food at up to 30% off! T&C</h4>
+                            <img src="./e-assets/images/electronic_log_image3.png" alt="Logo" class="img-fluid mt-3">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3" data-aos="fade-up">
+                    <div class="offer-card">
+                        <div class="top-section">
+                            <img src="./e-assets/images/electronic_image7.png" alt="">
+                            <span class="love-icon"><i class="fa-solid fa-heart"></i></span>
+                            <span class="hot-fire">
+                                <p>HOT &#128293; </p>
+                            </span>
+                        </div>
+                        <div class="bottom-section">
+                            <h4>Tasty food at up to 40% off! T&C</h4>
+                            <img src="./e-assets/images/electronic_log_image3.png" alt="Logo" class="img-fluid mt-3">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section" data-aos="fade-down">
+        <img src="./e-assets/images/footer-left_image.jpg" class="footer_left_image" alt="">
+        <div class="footer-container">
+            <!-- Left Box -->
+            <div class="footer-left">
+                <h2 class="footer-heading">Download App Get Exciting Student Discounts</h2>
+                <p class="footer-description">Start exploring blockchain applications in seconds.</p>
+                <img src="./e-assets/images/footer_bottom_image.png" alt="Download Button" class="download-button">
+            </div>
+
+            <!-- Right Box (Image Overflow) -->
+            <div class="footer-right">
+            </div>
+
+        </div>
+        <img src="./e-assets/images/footer_right_image.png" alt="Footer Image" class="footer-right-image">
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Latest Bootstrap JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
