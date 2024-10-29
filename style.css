@@ -104,13 +104,14 @@ p {
 }
 
 .navbar-nav .nav-link {
-  color: #fff;
+  color: #fafafa;
   padding: 10px 0;
   text-align: justify;
+  transition: .3s all;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffd700;
+  color: #00efc4;
 }
 
 /* Navbar Toggler */
@@ -165,7 +166,7 @@ p {
 
 /* Button Hover Effects */
 .btn-register:hover {
-  background-color: #ffd700; /* Change color on hover */
+  background-color: #ffd900; /* Change color on hover */
   transition: background-color 0.3s; /* Smooth transition */
 }
 
@@ -1474,8 +1475,8 @@ p {
 }
 
 .loader {
-  border: 8px solid #f3f3f3; /* Light grey border */
-  border-top: 8px solid #3498db; /* Blue border */
+  border: 8px solid #e8078e; /* Light grey border */
+  border-top: 8px solid #fafafa; /* Blue border */
   border-radius: 50%; /* Circular loader */
   width: 60px; /* Loader width */
   height: 60px; /* Loader height */

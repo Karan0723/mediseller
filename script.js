@@ -205,9 +205,6 @@ document.getElementById("contactForm").onsubmit = function (event) {
 
 
 
-// Onclick Form 
-
-
 
 
 
