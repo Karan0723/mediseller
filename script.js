@@ -131,10 +131,6 @@ function slideBrands() {
 // Automatically slide every 3 seconds
 setInterval(slideBrands, 3000);
 
-
-
-
-
 // Form
 
 // Thank you popup
@@ -201,14 +197,6 @@ document.getElementById("contactForm").onsubmit = function (event) {
     });
 };
 
-
-
-
-
-
-
-
-
 // Animation
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -225,4 +213,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     AOS.refresh(); // Refresh to apply the changes
   }
+});
+
+// Back to  Top Button
+
+// Select the scroll-to-top button
+const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+// Show button when scrolling down 100px from the top
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+};
+
+// Scroll to the top when button is clicked
+scrollToTopButton.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
