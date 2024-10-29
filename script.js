@@ -201,6 +201,17 @@ document.getElementById("contactForm").onsubmit = function (event) {
     });
 };
 
+
+
+
+
+// Onclick Form 
+
+
+
+
+
+
 // Animation
 
 document.addEventListener("DOMContentLoaded", () => {
